@@ -11,9 +11,16 @@ This document outlines the detailed step-by-step development plan for Phase 1 of
     *   Keep the project independent of specific render pipelines (URP, HDRP, Built-in), input systems, or camera controllers.
 
 ## 2. Core Package Structure
+*   **Status:** Completed and verified.
 *   **Actionable Tasks:**
     *   Define the Core package as an embedded Unity package inside the project.
     *   Create distinct directories for Runtime code and Editor code.
+*   **Verification:**
+    *   The Core package is embedded at `Packages/com.modularrpg.core` and includes its Unity package manifest at `Packages/com.modularrpg.core/package.json`.
+    *   Runtime code is isolated under `Packages/com.modularrpg.core/Runtime`.
+    *   Editor code is isolated under `Packages/com.modularrpg.core/Editor`.
+    *   Runtime tests and editor tests are separated under `Packages/com.modularrpg.core/Tests/Runtime` and `Packages/com.modularrpg.core/Tests/Editor`.
+    *   The Core package manifest declares an empty dependency map, keeping Core free of gameplay-module dependencies.
 *   **Constraints:**
     *   **Crucial:** Keep runtime code strictly separate from editor code.
     *   **Crucial:** The Core package must have zero dependencies on gameplay modules (e.g., inventory, stats).
