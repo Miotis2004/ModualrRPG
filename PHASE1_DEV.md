@@ -26,10 +26,16 @@ This document outlines the detailed step-by-step development plan for Phase 1 of
     *   **Crucial:** The Core package must have zero dependencies on gameplay modules (e.g., inventory, stats).
 
 ## 3. Package Metadata & Assembly Definitions
+*   **Status:** Completed and verified.
 *   **Actionable Tasks:**
     *   Create `package.json` with appropriate semantic versioning and metadata to ensure Unity recognizes the Core package.
     *   Create Assembly Definition (`.asmdef`) files for the Runtime assembly.
     *   Create Assembly Definition (`.asmdef`) files for the Editor assembly.
+*   **Verification:**
+    *   `Packages/com.modularrpg.core/package.json` declares the embedded Core package as `com.modularrpg.core` at semantic version `0.1.0` with Unity 6 compatibility metadata, package type, license, author, repository, keywords, samples, and an intentionally empty dependency map.
+    *   `Packages/com.modularrpg.core/Runtime/ModularRPG.Core.asmdef` defines the `ModularRPG.Core` runtime assembly with no references to editor or gameplay assemblies.
+    *   `Packages/com.modularrpg.core/Editor/ModularRPG.Core.Editor.asmdef` defines the `ModularRPG.Core.Editor` editor-only assembly and references `ModularRPG.Core`.
+    *   Runtime tests and editor tests have separate test assemblies that reference only the assemblies they need.
 *   **Constraints:**
     *   The Editor assembly must reference the Runtime assembly, but not vice versa.
     *   Ensure both runtime and editor assemblies compile independently.
