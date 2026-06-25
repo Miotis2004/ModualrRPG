@@ -1,0 +1,16 @@
+{
+  "name": "com.modularrpg.core",
+  "version": "0.1.0",
+  "displayName": "Modular RPG Core",
+  "description": "Core Foundation package for Modular RPG. Provides RPG GameManager, System Registry, Event Communication and other shared foundations. Contains no gameplay logic.",
+  "unity": "6000.0",
+  "dependencies": {},
+  "keywords": [
+    "rpg",
+    "core",
+    "foundation"
+  ],
+  "author": {
+    "name": "Modular RPG"
+  }
+}
