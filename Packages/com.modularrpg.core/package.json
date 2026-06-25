@@ -2,17 +2,27 @@
   "name": "com.modularrpg.core",
   "version": "0.1.0",
   "displayName": "Modular RPG Core",
-  "description": "Core Foundation package for Modular RPG. Provides RPG GameManager, System Registry, Event Communication and other shared foundations. Contains no gameplay logic.",
+  "description": "Core Foundation package for Modular RPG. Provides RPG GameManager, System Registry, Event Communication, validation, diagnostics, identifiers, and shared runtime contracts. Contains no gameplay logic.",
   "unity": "6000.0",
-  "dependencies": {},
+  "type": "library",
+  "license": "MIT",
   "keywords": [
     "rpg",
+    "modular",
     "core",
-    "foundation"
+    "foundation",
+    "game-manager",
+    "systems"
   ],
   "author": {
-    "name": "Modular RPG"
+    "name": "Modular RPG",
+    "url": "https://github.com/modular-rpg/modular-rpg"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/modular-rpg/modular-rpg.git"
+  },
+  "dependencies": {},
   "samples": [
     {
       "displayName": "Core Sample",
