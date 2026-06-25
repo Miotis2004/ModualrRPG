@@ -10,7 +10,7 @@ All official modules can integrate through the shared Core package and RPG GameM
 
 Modular RPG is currently in early development.
 
-The first development phase focuses on:
+Phase 1 Core Foundation implementation is available in the embedded Core package. The first development phase established:
 
 * Core package architecture
 * RPG GameManager
@@ -23,7 +23,7 @@ The first development phase focuses on:
 * Package validation
 * Automated testing foundations
 
-Gameplay modules will be developed after the Core package is stable.
+Gameplay modules will be developed after the Core package continues through Unity validation and stabilization.
 
 ## Project Goals
 
