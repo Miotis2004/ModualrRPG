@@ -12,5 +12,12 @@
   ],
   "author": {
     "name": "Modular RPG"
-  }
+  },
+  "samples": [
+    {
+      "displayName": "Core Sample",
+      "description": "Minimal RPGGameManager setup with a mock lifecycle system.",
+      "path": "Samples~/CoreSample"
+    }
+  ]
 }
